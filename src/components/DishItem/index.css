@@ -1,0 +1,126 @@
+.dish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.dish-details-container {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.dish-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.dish-price {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.dish-description {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: #0f8a2d;
+  border-radius: 24px;
+}
+
+.quantity-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.customization {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.not-available {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.calories-container {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.calories {
+  color: #f97316;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dish-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .dish-item {
+    padding: 12px;
+  }
+
+  .dish-name {
+    font-size: 16px;
+  }
+
+  .dish-price {
+    font-size: 15px;
+  }
+
+  .dish-description {
+    font-size: 13px;
+  }
+
+  .quantity-container {
+    width: 100px;
+    padding: 6px 10px;
+  }
+
+  .dish-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .calories {
+    font-size: 13px;
+  }
+}
