@@ -1,126 +1,109 @@
-.dish-item {
-  display: flex;
+.dish-item-container {
+  border: 1px solid gray;
+  border-radius: 12px;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 16px;
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #ffffff;
+}
+
+.veg-border {
+  border: 1px solid #00923f;
+  align-self: flex-start;
+}
+
+.non-veg-border {
+  border: 1px solid #92282a;
+}
+
+.veg-round {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #00923f;
+  margin: 5px;
+}
+
+.non-veg-round {
+  background-color: #92282a;
 }
 
 .dish-details-container {
-  flex: 1;
-  margin-right: 16px;
+  flex-grow: 1;
 }
 
 .dish-name {
-  margin: 0;
-  font-size: 18px;
   font-weight: 600;
-  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 25px;
+  margin-top: 0;
 }
 
-.dish-price {
-  margin: 8px 0;
+.dish-currency-price {
+  color: #525252;
+  font-weight: 600;
+  font-family: 'Roboto';
   font-size: 16px;
-  font-weight: 500;
-  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .dish-description {
-  margin: 8px 0;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #64748b;
+  color: #bfc3c7;
+  font-weight: 500;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.quantity-container {
-  display: flex;
-  align-items: center;
+.controller-container {
+  width: fit-content;
+  min-width: 150px;
   justify-content: space-between;
-  width: 120px;
-  margin-top: 12px;
-  padding: 8px 12px;
-  background-color: #0f8a2d;
-  border-radius: 24px;
+  padding: 10px;
+  border-radius: 50px;
 }
 
-.quantity-btn {
-  background: transparent;
+.button {
+  padding: 5px;
+  background-color: transparent;
   border: none;
-  color: #ffffff;
-  font-size: 20px;
+  outline: none;
   cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .quantity {
-  margin: 0;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
 }
 
-.customization {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #2563eb;
+.not-availability-text {
   font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
-.not-available {
-  margin-top: 12px;
-  color: #dc2626;
-  font-size: 15px;
+.addon-availability-text {
   font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0;
+  color: #734ff4;
 }
 
-.calories-container {
-  display: flex;
-  align-items: center;
-  margin-right: 16px;
-}
-
-.calories {
-  color: #f97316;
-  font-size: 15px;
-  font-weight: 600;
-  white-space: nowrap;
+.dish-calories {
+  min-width: 150px;
+  max-width: 250px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  font-size: 18px;
+  align-self: center;
 }
 
 .dish-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .dish-item {
-    padding: 12px;
-  }
-
-  .dish-name {
-    font-size: 16px;
-  }
-
-  .dish-price {
-    font-size: 15px;
-  }
-
-  .dish-description {
-    font-size: 13px;
-  }
-
-  .quantity-container {
-    width: 100px;
-    padding: 6px 10px;
-  }
-
-  .dish-image {
-    width: 90px;
-    height: 90px;
-  }
-
-  .calories {
-    font-size: 13px;
-  }
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  align-self: flex-start;
 }
